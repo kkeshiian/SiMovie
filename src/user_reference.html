@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SiMovie: Pencarian Film</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Secular+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- daisy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body theme="light">
+    <div class="main">
+      <div class="navbar bg-base-100 font-secular bg-[#2DAA9E]">
+        <a class="btn btn-ghost text-2xl text-[#EAEAEA]">SiMovie</a>
+      </div>
+      <div class="content">
+        <h2 class="font-bold text-[#479391] text-3xl text-center mt-4">
+          Film Berdasarkan Referensi
+        </h2>
+        <div
+          class="flex flex-row items-center gap-3 w-full max-w-md mt-4 mx-auto"
+        >
+          <input
+            type="text"
+            placeholder="Masukkan Judul Film"
+            class="input input-bordered flex-1 bg-white border-[#2DAA9E] rounded-3xl border-2 px-4 py-2"
+          />
+          <p class="text-center">Atau</p>
+          <a href="" class="btn bg-[#2DAA9E] rounded-3xl text-white border-0 px-4 py-2">Cari berdasarkan...</a>
+        </div>
+        <!-- list card -->
+        <div
+          class="list-card mx-auto max-w-[1200px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mt-12"
+        >
+          <div class="card card-compact bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="/src/img/cruella.png"
+                alt="Cruella"
+                class="w-full h-auto"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-center mx-auto">Cruella</h2>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center items-center">
+          <a href="index.html" class="btn border-[#2DAA9E] rounded-3xl border-2 w-32"">Back</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
