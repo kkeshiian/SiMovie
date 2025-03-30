@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SiMovie</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Secular+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Daisy UI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+  </head>
+  <body theme="light">
+    <div class="main">
+      <div class="navbar bg-base-100 font-secular bg-[#2DAA9E]">
+        <a class="btn btn-ghost text-2xl text-[#EAEAEA]">SiMovie</a>
+      </div>
+
+      <div class="content grid grid-cols-2 bg-white px-24 py-10">
+        <div class="main-text" style="width: 80%">
+          <div class="text text-[#479391] text-3xl font-bold">Hola bonjour</div>
+          <div
+            class="text text-[#2DAA9E] text-5xl font-bold"
+            style="line-height: 55px"
+          >
+            TEMUKAN FILM FAVORITMU SEKARANG JUGA!!
+          </div>
+          <div class="text text-[#47391] text-m mt-2">
+            Ketik Judul kamu atau bisa cari berdasarkan Favortimu, Duduk santai
+            dan Nikmati Filmmu!
+          </div>
+          <div
+            class="pencarian flex flex-col items-center gap-3 w-full max-w-md mt-12"
+          >
+            <a
+              href="user_search.html"
+              class="btn bg-white rounded-3xl text-[#2DAA9E] border-[#2DAA9E] border-2 w-full"
+              >Cari berdasarkan judul</a
+            >
+            <p class="text-center">Atau</p>
+            <a
+              href="preference_genre.html"
+              class="btn bg-[#2DAA9E] rounded-3xl text-white border-0 w-full"
+              >Cari berdasarkan referensi</a
+            >
+          </div>
+        </div>
+
+        <div class="main-image mx-auto flex flex-col items-center gap-2">
+          <!-- Tombol Panah Atas -->
+          <button class="btn btn-circle btn-xs" onclick="moveUp()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="w-3 h-3"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 15l7-7 7 7"
+              />
+            </svg>
+          </button>
+
+          <!-- Carousel Container -->
+          <div class="relative w-[500px] h-96">
+            <div class="carousel carousel-vertical rounded-box h-96">
+              <!-- Carousel Items -->
+            </div>
+          </div>
+
+          <!-- Tombol Panah Bawah -->
+          <button class="btn btn-circle btn-xs" onclick="moveDown()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="w-3 h-3"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <footer
+        class="footer text-white sm:footer-horizontal footer-center bg-[#2DAA9E] text-base-content p-4 fixed bottom-0"
+      >
+        <aside>
+          <p>Copyright © 2025 - All right reserved by ACME Industries Ltd</p>
+        </aside>
+      </footer>
+    </div>
+
+    <script>
+      function moveUp() {
+        document
+          .querySelector(".carousel")
+          .scrollBy({ top: -200, behavior: "smooth" });
+      }
+
+      function moveDown() {
+        document
+          .querySelector(".carousel")
+          .scrollBy({ top: 200, behavior: "smooth" });
+      }
+    </script>
+    <script src="js/carousel.js"></script>
+  </body>
+</html>

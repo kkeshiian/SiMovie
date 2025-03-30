@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Secular+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- daisy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="navbar bg-base-100 font-secular bg-[#2DAA9E]">
+        <a class="btn btn-ghost text-2xl text-[#EAEAEA]" href="index.html"
+          >SiMovie</a
+        >
+      </div>
+      <h2 class="font-bold text-[#479391] text-3xl text-center mt-4">
+        Genre apa yang kamu sukai?
+      </h2>
+      <div class="flex items-center justify-center mt-24">
+        <div class="flex flex-wrap justify-center gap-4 max-w-xl">
+          <button
+            onclick="genreToggle(this)"
+            data-id="28"
+            class="genre-btn px-5 py-2 rounded-full border-2 border-[#2DAA9E] bg-white text-black shadow-md transition-colors"
+            data-active="false"
+          >
+            Action
+          </button>
+          <button
+            onclick="genreToggle(this)"
+            data-id="12"
+            class="genre-btn px-5 py-2 rounded-full border-2 border-[#2DAA9E] bg-white text-black shadow-md transition-colors"
+            data-active="false"
+          >
+            Adventure
+          </button>
+          <button
+            onclick="genreToggle(this)"
+            data-id="16"
+            class="genre-btn px-5 py-2 rounded-full border-2 border-[#2DAA9E] bg-white text-black shadow-md transition-colors"
+            data-active="false"
+          >
+            Animation
+          </button>
+          <button
+            onclick="genreToggle(this)"
+            data-id="35"
+            class="genre-btn px-5 py-2 rounded-full border-2 border-[#2DAA9E] bg-white text-black shadow-md transition-colors"
+            data-active="false"
+          >
+            Comedy
+          </button>
+          <button
+            onclick="genreToggle(this)"
+            data-id="99"
+            class="genre-btn px-5 py-2 rounded-full border-2 border-[#2DAA9E] bg-white text-black shadow-md transition-colors"
+            data-active="false"
+          >
+            Documentary
+          </button>
+          <button
+            onclick="genreToggle(this)"
+            data-id="80"
+            class="genre-btn px-5 py-2 rounded-full border-2 border-[#2DAA9E] bg-white text-black shadow-md transition-colors"
+            data-active="false"
+          >
+            Crime
+          </button>
+          <button
+            onclick="genreToggle(this)"
+            data-id="18"
+            class="genre-btn px-5 py-2 rounded-full border-2 border-[#2DAA9E] bg-white text-black shadow-md transition-colors"
+            data-active="false"
+          >
+            Drama
+          </button>
+          <button
+            onclick="genreToggle(this)"
+            data-id="10751"
+            class="genre-btn px-5 py-2 rounded-full border-2 border-[#2DAA9E] bg-white text-black shadow-md transition-colors"
+            data-active="false"
+          >
+            Family
+          </button>
+          <button
+            onclick="genreToggle(this)"
+            data-id="14"
+            class="genre-btn px-5 py-2 rounded-full border-2 border-[#2DAA9E] bg-white text-black shadow-md transition-colors"
+            data-active="false"
+          >
+            Fantasy
+          </button>
+          <button
+            onclick="genreToggle(this)"
+            data-id="878"
+            class="genre-btn px-5 py-2 rounded-full border-2 border-[#2DAA9E] bg-white text-black shadow-md transition-colors"
+            data-active="false"
+          >
+            Science-Fiction
+          </button>
+          <button
+            onclick="genreToggle(this)"
+            data-id="27"
+            class="genre-btn px-5 py-2 rounded-full border-2 border-[#2DAA9E] bg-white text-black shadow-md transition-colors"
+            data-active="false"
+          >
+            Horror
+          </button>
+          <button
+            onclick="genreToggle(this)"
+            data-id="10402"
+            class="genre-btn px-5 py-2 rounded-full border-2 border-[#2DAA9E] bg-white text-black shadow-md transition-colors"
+            data-active="false"
+          >
+            Music
+          </button>
+          <button
+            onclick="genreToggle(this)"
+            data-id="9648"
+            class="genre-btn px-5 py-2 rounded-full border-2 border-[#2DAA9E] bg-white text-black shadow-md transition-colors"
+            data-active="false"
+          >
+            Mystery
+          </button>
+          <button
+            onclick="genreToggle(this)"
+            data-id="10749"
+            class="genre-btn px-5 py-2 rounded-full border-2 border-[#2DAA9E] bg-white text-black shadow-md transition-colors"
+            data-active="false"
+          >
+            Romance
+          </button>
+          <button
+            onclick="genreToggle(this)"
+            data-id="36"
+            class="genre-btn px-5 py-2 rounded-full border-2 border-[#2DAA9E] bg-white text-black shadow-md transition-colors"
+            data-active="false"
+          >
+            History
+          </button>
+          <button
+            onclick="genreToggle(this)"
+            data-id="53"
+            class="genre-btn px-5 py-2 rounded-full border-2 border-[#2DAA9E] bg-white text-black shadow-md transition-colors"
+            data-active="false"
+          >
+            Thriller
+          </button>
+
+          <div class="flex gap-4 mt-24">
+            <a
+              href="index.html"
+              id="backBtn"
+              class="btn border-[#2DAA9E] rounded-3xl border-2 w-32 bg-white text-black shadow-md transition-colors"
+              >Back</a
+            >
+            <a
+              href="preference_bahasa.html"
+              id="backBtn"
+              class="btn border-[#2DAA9E] rounded-3xl border-2 w-32 bg-white text-black shadow-md transition-colors"
+              >Next</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    let selectedGenre = [];
+
+    function genreToggle(button) {
+      const genreID = parseInt(button.dataset.id);
+
+      if (selectedGenre.includes(genreID)) {
+        selectedGenre = selectedGenre.filter((id) => id !== genreID);
+        // button.classList.remove("selected")
+        button.classList.remove("bg-[#2DAA9E]", "text-white");
+        button.classList.add("bg-white", "text-black");
+      } else {
+        button.classList.remove("bg-white", "text-black");
+        button.classList.add("bg-[#2DAA9E]", "text-white");
+        selectedGenre.push(genreID);
+        // button.classList.add("selected")
+      }
+
+      localStorage.setItem("selectedGenres", JSON.stringify(selectedGenre));
+      console.log(selectedGenre);
+    }
+
+    // document.querySelectorAll(".genre-btn").forEach((button) => {
+    //   button.addEventListener("click", () => {
+    //     let isActive = button.getAttribute("data-active") === "true";
+
+    //     if (selectedGenre.includes(genreID)) {
+
+    //       button.setAttribute("data-active", "false");
+    //       selectedGenre = selectedGenre.filter
+    //     } else {
+
+    //       button.setAttribute("data-active", "true");
+    //     }
+    //   });
+    // });
+  </script>
+</html>
