@@ -28,37 +28,42 @@
         <a class="btn btn-ghost text-2xl text-[#EAEAEA]">SiMovie</a>
       </div>
 
-      <div class="content grid grid-cols-2 bg-white px-24 py-10">
-        <div class="main-text" style="width: 80%">
-          <div class="text text-[#479391] text-3xl font-bold">Hola bonjour</div>
+      <div
+        class="content grid grid-cols-1 md:grid-cols-2 gap-8 bg-white px-6 md:px-24 py-10"
+      >
+        <div class="main-text w-full md:w-4/5">
+          <div class="text text-[#479391] text-xl md:text-3xl font-bold">
+            Hola bonjour
+          </div>
           <div
-            class="text text-[#2DAA9E] text-5xl font-bold"
-            style="line-height: 55px"
+            class="text text-[#2DAA9E] text-3xl md:text-5xl font-bold leading-tight"
           >
             TEMUKAN FILM FAVORITMU SEKARANG JUGA!!
           </div>
-          <div class="text text-[#47391] text-m mt-2">
-            Ketik Judul kamu atau bisa cari berdasarkan Favortimu, Duduk santai
-            dan Nikmati Filmmu!
+          <div class="text text-[#47391] text-sm md:text-base mt-2">
+            Ketik judul kamu atau bisa cari berdasarkan favoritmu. Duduk santai
+            dan nikmati filmmu!
           </div>
           <div
-            class="pencarian flex flex-col items-center gap-3 w-full max-w-md mt-12"
+            class="pencarian flex flex-col items-center gap-3 w-full max-w-md mt-8"
           >
             <a
               href="user_search.html"
               class="btn bg-white rounded-3xl text-[#2DAA9E] border-[#2DAA9E] border-2 w-full"
-              >Cari berdasarkan judul</a
             >
+              Cari berdasarkan judul
+            </a>
             <p class="text-center">Atau</p>
             <a
               href="preference_genre.html"
               class="btn bg-[#2DAA9E] rounded-3xl text-white border-0 w-full"
-              >Cari berdasarkan referensi</a
             >
+              Cari berdasarkan referensi
+            </a>
           </div>
         </div>
 
-        <div class="main-image mx-auto flex flex-col items-center gap-2">
+        <div class="main-image mx-auto flex flex-col items-center gap-2 w-full">
           <!-- Tombol Panah Atas -->
           <button class="btn btn-circle btn-xs" onclick="moveUp()">
             <svg
@@ -78,8 +83,10 @@
           </button>
 
           <!-- Carousel Container -->
-          <div class="relative w-[500px] h-96">
-            <div class="carousel carousel-vertical rounded-box h-96">
+          <div
+            class="relative flex justify-center items-center w-full max-w-sm md:max-w-lg h-80 md:h-96 mx-auto"
+          >
+            <div class="carousel carousel-vertical rounded-box h-80 md:h-96">
               <!-- Carousel Items -->
             </div>
           </div>
@@ -105,10 +112,14 @@
       </div>
 
       <footer
-        class="footer text-white sm:footer-horizontal footer-center bg-[#2DAA9E] text-base-content p-4 fixed bottom-0"
+        class="footer text-white sm:footer-horizontal footer-center bg-[#2DAA9E] text-base-content p-4 bottom-0"
       >
         <aside>
-          <p>Copyright © 2025 - All right reserved by ACME Industries Ltd</p>
+          <p>
+            Copyright © 2025 - All right reserved by
+            <span class="underline">SanakKita Company Ltd. & 1 Daffa</span> Made
+            with ❤️
+          </p>
         </aside>
       </footer>
     </div>
