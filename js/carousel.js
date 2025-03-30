@@ -88,7 +88,7 @@ function displayMovies(movies) {
               <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" 
                 alt="${movie.title}" class="h-48 rounded-lg shadow-lg" />
             </figure>
-            <div class="w-2/3 p-4 bg-black bg-opacity-30 backdrop-blur-md rounded-lg">
+            <div class="w-2/3 p-4 bg-black bg-opacity-30 backdrop-blur-md rounded-lg sm:h-2/3 ml-4 my-4">
               <h2 class="card-title text-center mx-auto">${movie.title}</h2>
               <div class="grid grid-cols-2 gap-1 mt-2">
                 <p class="font-semibold">Tanggal Rilis</p>  <p>: ${
